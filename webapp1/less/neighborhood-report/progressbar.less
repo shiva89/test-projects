@@ -1,0 +1,73 @@
+.neighborhood-progress{
+  .ui-progressbar{
+    width: 69%;
+    overflow: visible;
+    position: relative;
+    height: 13px;
+    margin-bottom: 1px;
+    &.ui-corner-all, .ui-corner-right, .ui-corner-left{
+      border-radius: 0px;
+    }
+
+    .progress-label{
+      right: -56px;
+      position: absolute;
+      top: -7px;
+      background-color: #677287;
+      padding:1px 8px;
+      color: #ffffff;
+      font-size: 14px;
+      border-radius: 2px;
+      width: 45px;
+      text-align: center;
+
+      &:before{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4.5px 4px 4.5px 0;
+        border-color: transparent #677287 transparent transparent;
+        position: absolute;
+        content: '';
+        left: -4px;
+        top: 37%;
+      }
+    }
+
+  }
+}
+
+
+//Mixin for progress bar color
+
+
+
+#occupied{
+  .ui-progressbar-value{
+    background-color: #01882A;
+  }
+}
+
+#vacant{
+  .ui-progressbar-value{
+    background-color: #C82604;
+  }
+}
+
+#homeOwners{
+  .ui-progressbar-value{
+    background-color: #54C5E0;
+  }
+}
+
+#renter, #blueCollar{
+   .ui-progressbar-value{
+     background-color: #EDC35F;
+   }
+ }
+
+#whiteCollar{
+  .ui-progressbar-value{
+    background-color: #B46BE1;
+  }
+}

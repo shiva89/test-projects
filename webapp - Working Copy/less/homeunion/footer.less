@@ -1,0 +1,90 @@
+// portfolio builder page container
+
+.footer{
+	background-color:#f2f4f6;
+	font-size:@font-size-small;
+    padding-left:33px;
+    padding-right:33px;
+    position: absolute;
+    bottom: 0;
+  width: 100%;
+    margin-top: 144px;
+	@media(max-width:@screen-sm){
+		padding-left:15px;
+		padding-right:15px;
+	}
+}
+
+.main-footer{
+	 position:relative;
+	 background-color:#333;	 
+	 padding:35px 10px;
+	 color:#aaaaaa;
+	 
+		 h4{
+			 font-size:20px; 
+			 color:@white; 
+			 line-height:30px; 
+			 margin-bottom:30px;
+			 margin-bottom:15px;
+		 }
+		 
+		 .post{
+			 ul{
+				 padding-left:0;
+				 li{
+					 list-style:none;
+					 margin-bottom:10px;
+					 a{
+						 color:#dddddd;
+						 font-size:15px;
+						 &:hover{
+							 color:@white;
+						 }
+					 }
+				 }
+			 }
+		 }
+
+}
+.privacy{
+	ul{
+		li{
+			margin-right:10px;
+			a{
+				color:#dddddd;
+				padding:14px 0;
+				&:hover{
+					background-color:transparent;
+					color:@white;
+				}
+			}
+		}
+	}
+	
+}
+
+.footer-bottom{
+	background-color:#222222;
+	width:100%;
+	float:left;
+	ul{
+		float:right;
+		@media(max-width:@screen-sm)
+		{
+			float:left;
+		
+		}
+				
+		li{
+			a{
+				color:#999999;
+				font-size:@font-size-small;
+				&:hover{
+					background-color:transparent;
+					color:#ffffff;
+				}
+			}
+		}
+	}
+}

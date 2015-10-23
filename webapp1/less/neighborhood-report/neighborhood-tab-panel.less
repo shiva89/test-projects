@@ -1,0 +1,39 @@
+/*
+*Tab panel
+*/
+.neigh-tabs{
+
+  .nav-tabs {
+    border-top: 1px solid @nav-tabs-border-color;
+    border-bottom:0;
+    > li {
+      float: left;
+
+      > a {
+        border-radius:0;
+        font-weight:600;
+        font-size: 15px;
+        color: #504F4F;
+        padding: 8px 18px;
+        border:0 none;
+        &:hover {
+          border-color:transparent;
+          background-color:#dddee0;
+        }
+      }
+
+
+      &.active > a {
+        &,
+        &:hover,
+        &:focus {
+          color: #1167bd;
+          background-color:#dddee0;
+          border:0 none;
+          border-bottom-color: transparent;
+        }
+      }
+    }
+}
+}
+

@@ -1,0 +1,44 @@
+<% if(curr_page === "question" || curr_page === "questionnaire"){ %>
+  <div class="pad_bgall">
+    
+</div>
+<% }else{ %>
+
+<% if(!login_temp){ %>
+                     <!--BEGIN CONTAINER--> 
+                    <div class="page-container">
+                             <!--BEGIN SIDEBAR--> 
+                            <div class="page-sidebar-wrapper">
+
+                            </div>
+                             <!--END SIDEBAR--> 
+                             <!--BEGIN CONTENT--> 
+                            <div class="page-content-wrapper">
+                                    <div class="page-content">
+                                            <% if(curr_page === "plan"){ %>
+                                            <div class="plan-header"></div>
+                                            <div class="clearfix"> </div>
+                                            <div class="plan-result"></div>
+                                            <%}else if(curr_page === "propertydetail"){ %>
+                                            <div class="property-detail-header"></div>
+                                            <div class="clearfix"> </div>
+                                            <div class="property-detail-detail"></div>
+                                            <% }else if(curr_page === "browse-properties"){ %>
+                                            <div class="prop-search-header"></div>
+                                            <div class="clearfix"> </div>
+                                            <div class="prop-search-result"></div>
+                                            <%} %>
+                                    </div>
+                            </div>
+                             <!--END CONTENT--> 
+                    </div>
+
+
+            <% } else { %>
+             <!--Only for Sign up & Login pages-->
+        <div class="content">
+
+        </div>
+                    <% } %>
+
+     <% } %>

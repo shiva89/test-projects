@@ -1,0 +1,35 @@
+/*
+ * Pagination
+ */
+
+.hu-paging{
+	width:28%;
+	margin:0 auto;
+	@media(max-width:@screen-lg)
+	{
+		width:28%;
+		}
+	@media(max-width:@screen-md)
+	{
+		width:36%;
+		}
+	@media(max-width:@screen-sm)
+	{
+		width:40%;
+		}
+
+	.pagination{
+		li{
+			a,span{
+				border:0 none;
+				color:#b5c3d1;
+				font-size:15px;
+				&:hover,
+				&:focus{
+					color:#00a1e1;
+					background-color:transparent;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,339 @@
+//## Define your custom Classes.
+
+/*Margins and Padding*/
+.m-l-5 {
+  margin-left: 5px;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.m-l-20 {
+  margin-left: 20px;
+}
+
+.m-l-25 {
+  margin-left: 25px;
+}
+
+.m-r-5 {
+  margin-right: 5px;
+}
+
+.m-r-10{
+  margin-right:10px;
+}
+.m-r-20{
+  margin-right:20px;
+}
+
+.m-r-25 {
+  margin-right: 25px;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+.m-t-10 {
+  margin-top: 10px;
+}
+.m-t-15 {
+  margin-top: 15px;
+}
+
+.m-t-5 {
+  margin-top: 5px;
+}
+.m-t--7{
+  margin-top: -7px;
+}
+
+.m-t-45 {
+  margin-top: 45px;
+}
+
+.m-t-0 {
+  margin-top: 0px;
+}
+
+.m-t-30 {
+  margin-top: 30px;
+}
+.m-b-0{
+  margin-bottom: 0 !important;
+}
+.m-b-5 {
+  margin-bottom: 5px;
+}
+.m-b-15 {
+  margin-bottom: 15px;
+}
+.m-b-20{
+  margin-bottom: 20px;
+}
+.m-b-28{
+  margin-bottom: 28px;
+}
+.m-b-0{
+  margin-bottom: 0px;
+}
+.m-b-3{
+  margin-bottom: 3px;
+}
+.m-b-10{
+  margin-bottom:10px;
+}
+
+
+
+
+.p-t-20 {
+  padding-top: 20px;
+}
+.p-b-10 {
+  padding-bottom: 10px;
+}
+.p-t-25 {
+  padding-top: 25px;
+}
+
+.p-t-15 {
+  padding-top: 15px;
+}
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.p-b-28 {
+  padding-bottom: 28px;
+}
+.p-0{padding: 0;}
+.m-b-35 {
+  margin-bottom: 35px;
+}
+
+.p-b-15 {
+  padding-bottom: 15px;
+}
+
+.p-b-5 {
+  padding-bottom: 5px;
+}
+
+.p-t-26{
+	padding-top:26px;
+	
+}
+.p-8-25{
+    padding:8px 25px 6px;
+
+}
+
+/*color*/
+.txt-blue {
+  color: #00a1e1;
+}
+.txt-blue1{
+	color:#3a4653;
+}
+.txt-dblue{
+	color:#002f56;
+}
+
+.txt-green {
+  color: #67bc5a;
+}
+.txt-lightblue{
+	color:#6c8198;
+}
+.txt-lightblue1{
+  color:#8d9dae;
+}
+
+
+/*links*/
+a.green-link {
+  font-size: @font-size-medium;
+  padding: 26px 0 0 0;
+  display:inline-block;
+  @media (max-width: @screen-md) {
+	  padding-top:5px;
+		
+			}
+  @media (max-width:767px) {
+    padding-top:20px;
+
+  }
+  &:hover {
+    color: #56A536;
+	text-decoration:none;
+  }
+}
+
+/*button customization for padding according to psd*/
+.any{padding: 8px 80px !important;}
+.ui-button{padding: 5px 19px 8px;}
+.btn{
+  transition: opacity 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s ;
+  transition: all ease 0.5s ;
+  &:hover{
+    -webkit-transition: all ease 0.7s;
+    -moz-transition: all ease 0.7s;
+    -o-transition: all ease 0.7s;
+    -ms-transition: all ease 0.7s ;
+    transition: all ease 0.5s ;
+  }
+
+}
+.page-wrapper{
+	.btn {
+	  border-radius:3px;
+	  font-size: 15.4px;
+	  padding:8px 22px 7px;
+	}
+}
+.site-wrapper {
+	.btn {
+	  border-radius:3px;
+	  font-size: 16px;
+	  padding:8px 18px 7px;
+	}
+}
+
+
+.ruda-button-font{
+   font-family:@headings-font-family;
+	
+}
+
+.btn-border {
+  border: 1px solid #4cae4c;
+  color: #67bc5a;
+  background-color: @white;
+}
+
+.btn-unselect {
+  background-color: transparent;
+  border: 0 none;
+  color: #6c8198;
+  margin-right: 48px;
+  &:hover{
+    color: #43566b;
+
+  }
+}
+
+.btn-group {
+  &.btn-toggle {
+    margin-top: 48px;
+
+    .btn {
+      &.active {
+        background-color: #07b6fc;
+        box-shadow: none;
+        border-color: #07b6fc;
+      }
+    }
+    .btn-lg {
+      font-weight: normal;
+    }
+
+    .btn-default {
+      color: #6c8198;
+    }
+
+  }
+
+}
+
+.btn-primary {
+  background-color: #07b6fc;
+}
+
+/*fonts and fonta size*/
+.f-16 {
+  font-size: @font-size-medium;
+}
+.f-13 {
+  font-size:13px;
+}
+
+.f-12 {
+  font-size: @font-size-small !important;
+}
+.f-15 {
+  font-size:15px;
+}
+.f-18 {
+  font-size:18px;
+}
+.f-24 {
+  font-size:24px;
+}
+
+/*borders*/
+.bb {
+  border-bottom: #ebeef1;
+}
+.bor{border:1px solid #dfe7ea;}
+
+.port-title{ color:@dark-blue2;}
+.port-heading{ color:@tooltip-color;}
+.bb2{border-bottom:1px solid #ebeef1;}
+.bb3{border-bottom:2px solid #cfd8dc;}
+.bggrey {
+  background-color: #f3f3f3 !important;
+}
+.remove-prp{ width: 70px;}
+
+/*help center*/
+.hu-help-center{
+  position: absolute;
+  bottom: 65px;
+  padding: 10px 16px;
+  @media(max-width: @screen-md){
+    display: none;
+
+  }
+
+}
+
+/*property search input*/
+.ps{
+	.form-control{
+	height:30px;
+	font-size:11px;
+      width: 115px;
+}
+}
+.display-inline{
+  display: inline-block;
+
+}
+.print-share{
+  .nav-pills{
+
+  }
+
+}
+ul{
+  &.city-info{
+    padding-left: 10px;
+    li{
+      list-style: none;
+      padding: 8px 0;
+
+    }
+
+  }
+
+}

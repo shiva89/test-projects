@@ -1,0 +1,53 @@
+/*
+ * Tab Panel
+ */
+
+.grey-tabpanel{
+	.nav-tabs{
+		background-color:#f2f4f6;
+		border-bottom:0 none;
+		li{
+			a{
+					font-size:@font-size-small;
+					color:#8d9dae;
+					border-radius:0;
+					padding:12px 30px;
+					
+					&:hover
+					{
+						color:#00a1e1;
+						background-color:transparent;
+						border:1px solid transparent;
+					}
+			}
+			&.active{
+				a{
+					color:#00a1e1;
+					background-color:transparent;
+					border:1px solid transparent;
+					border-radius:0;
+					font-weight:normal;
+                  &:after,&:before {
+                    top: 100%;
+                    left: 50%;
+                    border: solid transparent;
+                    content: " ";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                  }
+                  &:after { border-color: rgba(255, 255, 255, 0); border-top-color: #f2f4f6; border-width: 8px; margin-left: -8px; }
+                  &:before { border-color: rgba(0, 0, 0, 0); border-top-color: #f2f4f6; border-width: 8px; margin-left: -8px; }
+						&:hover{
+						color:#00a1e1;
+						border:1px solid transparent;
+						border-radius:0 ;
+						font-weight:normal ;
+                          background-color:transparent;
+						}
+				}
+			}
+		}
+	}
+}

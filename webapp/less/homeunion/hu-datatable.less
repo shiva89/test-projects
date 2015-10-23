@@ -1,0 +1,54 @@
+/*
+ * Data Table Structure
+ */
+
+/***
+Datatables Plugin(in v1.3)
+***/
+.dataTable {  
+  width: 100% !important;
+  clear: both;
+  margin-top: 5px;
+  thead{
+	  tr{
+		  th{
+			  font-size:@font-size-small;
+			  text-transform:uppercase;
+			  font-weight:normal;
+			  text-align:center;
+			  color:#6c8198;
+			  cursor:pointer;
+			  border-bottom-width:1px;
+				  &.sorting_asc,
+				  &.sorting_desc,
+				  &.sorting,
+				  &.sorting_asc_disabled,
+				  &.sorting_desc_disabled{
+					  padding-right: 18px;
+				  }
+		  }
+	  }
+  }
+  
+  tbody{
+	  tr{
+		  td{
+				  color:#002f56;
+				  font-size:13px;
+				  vertical-align:middle;
+				  p,span{
+				  white-space:normal;
+				  }
+            a{
+              &.prop-title-link{
+                color:#002f56;
+
+              }
+
+            }
+				  
+			  }
+	  }
+  }
+
+}
