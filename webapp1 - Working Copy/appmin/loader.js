@@ -1,0 +1,1 @@
+require(["build-dest/lib-loader"],function(){require(["build-dest/login-loader","build-dest/app-loader"])}),define("loader",function(){});
