@@ -31,7 +31,7 @@
     mainConfigFile:'loader.js',
     dir: '../appmin',
     //name: "loader",
-    removeCombined: true,
+   // removeCombined: true,
     findNestedDependencies: true,
     keepBuildDir: false,
      //   out: "../assets/minified/loader-built.js",

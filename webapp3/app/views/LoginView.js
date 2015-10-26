@@ -22,9 +22,8 @@ define( [
                return this;
            },
            ShowPropSearchView :function (){
-                console.log('out ->'+app.subrouter);
+    
                 _.defer(function(){
-                    console.log('in ->'+app.subrouter);
                     app.subrouter.navigate('propSearch', true);
                 });
 

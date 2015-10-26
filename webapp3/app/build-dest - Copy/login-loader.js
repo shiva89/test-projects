@@ -7,6 +7,6 @@ require(['build-dest/lib-loader'], function(){
             // This will be a singleton, which other modules can access
             app.session = new SessionModel({ });
 
-             //Backbone.history.start();
+             // Backbone.history.start();
    });
 });
