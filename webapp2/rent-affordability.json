@@ -1,0 +1,32 @@
+
+[
+  {
+    "values": [
+      {
+        "label" : "Above $500" ,
+        "value" : 83.78
+      } ,
+      {
+        "label" : "Above $700" ,
+        "value" : 74.45
+
+      } ,
+      {
+        "label" : "Above $1100" ,
+        "value" : 61.37
+      } ,
+      {
+        "label" : "Above $1500" ,
+        "value" : 43.34
+
+      } ,
+      {
+        "label" : "Above $1900" ,
+        "value" : 30.33
+
+      }
+
+    ]
+  }
+]
+

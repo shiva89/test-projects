@@ -1,0 +1,282 @@
+#hu-new{
+  .header_right_bg{
+    background-color: #183e68;
+  }
+  .page-sidebar{
+	  width:200px;
+
+      .badge{
+        background-color: #cd5440;
+        padding: 12px 8px;
+        font-size: 14px !important;
+        line-height: 0;
+        font-weight: 500;
+        margin-left: 9px;
+        float: none;
+        margin-top: 0;
+      }
+
+  }
+  &.page-header-fixed .page-container {
+   // margin-top: 50px;
+  }
+  .page-content {
+    margin-top: 0px;
+	margin-left:200px;
+    position: relative;
+    padding: 0;
+    background-color: #ffffff;
+    .inner-con{
+      padding:10px 30px 144px;
+      overflow: auto;
+
+    }
+  }
+
+  ul.page-sidebar-menu > li.active > a {
+    background: #00a1e1;
+    border-top-color: transparent;
+    color: #ffffff !important;
+	
+  }
+  .page-sidebar-menu > li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    border-bottom: 1px solid #325982;
+	a {
+	   i{
+		margin-right:10px;
+		}
+	}
+    &:hover,&.active,&.open {
+      >a {
+        background-color: #00a1e1;
+        color: #ffffff !important;
+        i {
+
+          &.ico-port-builder {
+            background-position: -5px -547px;
+          }
+          &.ico-prop-search {
+            background-position: -5px -624px;
+          }
+          &.ico-prop-class {
+            background-position: -5px -706px;
+          }
+          &.ico-wishlist {
+            background-position: -5px -785px;
+          }
+          &.ico-transaction {
+            background-position: -5px -861px;
+          }
+          &.ico-performance {
+            background-position: -5px -939px;
+          }
+          &.ico-myvault {
+            background-position: -5px -1019px;
+          }
+        }
+      }
+    }
+    >a{
+      display: block;
+      position: relative;
+      margin: 0;
+      border: 0px;
+      padding: 15px 15px;
+      text-decoration: none;
+      font-size: 14px;
+      .active &{
+        border: none;
+        text-shadow:none;
+        font-size: 14px;
+      }
+    }
+
+  }
+
+
+  ul.page-sidebar-menu > li > ul.sub-menu > li > a:hover {
+    background: #004164 !important;
+  }
+  .hu-icon{
+    background: url("../img/sprite.png") no-repeat left top;
+    display: inline-block;
+    vertical-align: middle;
+    .size(25px, 20px);
+    &.hu-icon-builder{
+      background-position: 0px -430px
+    }
+    &.hu-icon-search{
+      background-position: 0px -470px;
+    }
+    &.hu-icon-property-class{
+      background-position: 0px -509px;
+    }
+    &.hu-icon-wishlist{
+      background-position: 0px -550px;
+    }
+    &.hu-icon-transactions{
+      background-position: 0px -589px;
+    }
+    &.hu-icon-performance{
+      background-position: 0px -627px;
+    }
+    &.hu-icon-vault{
+      background-position: 0px -666px;
+    }
+  }
+}
+
+/*header navbar*/
+.header{
+	&.navbar{
+		.navbar-brand{
+			width:200px;
+			padding-top:11px;
+		}
+		.navbar-nav{
+			>li{
+				 border-left:1px solid #3f6485;
+
+				 &.dropdown{
+					 padding-left:0;
+				     padding-right:0;
+				 
+					 
+				 }
+				
+			}
+		}
+	}
+}
+
+/*header dropdown menu toggle*/
+.header{
+  &.navbar{
+    .navbar-nav{
+      li{
+        &.dropdown{
+          .dropdown-toggle{
+            &:hover,
+            &:focus{
+              i{
+                &.ico-user{
+                  background-position:-5px -392px;
+
+                }
+                &.ico-support{
+                  background-position:-5px -310px;
+
+                }
+
+              }
+
+            }
+
+
+          }
+
+        }
+
+      }
+
+    }
+
+
+  }
+
+}
+
+.dropdown-menu {
+  &.extended1 {
+    min-width: 100px !important;
+    max-width: 148x !important;
+    width: 148px !important;
+    border: none !important;
+    margin: 0px !important;
+    margin-right: 1px !important;
+    padding: 0px !important;
+  }
+  
+  &:before,
+  &:after{
+  }
+  li{
+	  i{
+		    margin-right: 10px;
+            width: 20px;
+	  }
+	  a{
+		     display: block;
+			 font-size: 15px;
+             background-color: #122f4f;
+             padding:10px 22px;
+             color: #6c8198;
+			 clear: both;
+			 font-weight: normal;
+			 line-height: 20px;
+			 white-space: normal !important;
+             border-top:1px solid #6c8198;
+			 
+			 &:hover{
+               background-image: none;
+               background-color: #00a1e1 !important;
+               color: #fff !important;
+               filter:none;
+               &:hover,
+               &:focus{
+                 i{
+                   &.ico-settings{
+                     background-position:-5px -1494px;
+                     vertical-align: -8px;
+                     .square(24px);
+                   }
+                   &.ico-profile{
+                     background-position:-5px -1566px;
+                   }
+                   &.ico-logout{
+                     background-position:-5px -1644px;
+                   }
+
+                 }
+
+               }
+			 }
+	  }
+  }
+  
+
+}
+
+
+  .header .navbar-nav .dropdown-toggle:hover,
+  .header .navbar-nav .dropdown.open .dropdown-toggle {
+    background-color: #122f4f !important;
+    color:#ffffff;
+
+  }
+/***
+Font Awesome Icons
+***/
+
+[class^="fa-"],
+[class*=" fa-"] {
+  display: inline-block;
+  margin-top: 1px;
+  font-size: 14px;
+  *margin-right: .3em;
+  line-height: 14px;
+}
+
+.inback{background-color:#F1F1F1; text-decoration:none; font-size:16px; font-weight:600; padding:10px; border-top-left-radius:5px!important; border-bottom-left-radius:5px!important; color:#FFFFFF;}
+.inback:hover{background-color:#DFDFDF; text-decoration:none; color:#FFFFFF;}
+.inback:focus{background-color:#DFDFDF; text-decoration:none; color:#FFFFFF;}
+
+
+
+.acnext{background-color:#C9C9C9; font-size:16px; font-weight:600; padding:10px; text-decoration:none; border-top-right-radius:5px!important; border-bottom-right-radius:5px!important; color:#FFFFFF;}
+.acnext:hover{background-color:#DFDFDF; text-decoration:none; color:#FFFFFF;}
+.acnext:focus{background-color:#DFDFDF; text-decoration:none; color:#FFFFFF;}
