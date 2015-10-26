@@ -1,7 +1,6 @@
-/**
- * Created by santosh on 3/31/14.
- */
 require(['config'], function() {
-    require(['main']);
+    // require(['routers/AppRouter']);
+    require(['build-dest/login-loader','build-dest/app-loader']);
+
     }
 );

@@ -22,7 +22,7 @@ require.config({
 
     // non-AMD lib
     shim: {
-        //'jquery'              : { exports  : '$' },
+        // 'jquery'              : { exports  : '$' },
         'underscore'            : { exports  : '_' },
         'backbone'              : { deps : ['underscore'], exports : 'Backbone' },
         'bootstrap.min'         : ["jquery"]
@@ -38,4 +38,7 @@ requirejs.onError = function (err) {
     }
     throw err;
 };
-// requirejs(["appmain/main"]);
+//requirejs(["appmain/main"]);
+define(["jquery"], function($) {
+
+});

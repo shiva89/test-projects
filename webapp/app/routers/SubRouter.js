@@ -20,7 +20,7 @@ define([
         )
 {
 
-    var AppRouter = Backbone.Router.extend({
+    var SubRouter = BaseRouter.extend({
         initialize: function() {
             _.bindAll(this);
             var self = this;
@@ -31,13 +31,13 @@ define([
             "propSearch" : "showPropSearch"
         },
 
-        propDetail: function(property_id) {
+        showPropDetail: function(property_id) {
             if(!app.PropertyDetailModel){
                 app.PropertyDetailModel = new PropertyDetailModel();
             }
             this.show(new PropertyDetailView({}), {requiresAuth: false});
         },
-        propSearch: function(property_id) {
+        showPropSearch: function(property_id) {
            if(!app.PropertySearchModel){
                 app.PropertySearchModel = new PropertySearchModel();
             }
@@ -46,6 +46,6 @@ define([
 
     });
 
-    return AppRouter;
+    return SubRouter;
 
 });

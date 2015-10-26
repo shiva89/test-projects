@@ -1,11 +1,11 @@
 /**
  * @desc        backbone router for pushState page routing
  */
-require(['../config'], function(){
+// require(['config'], function(){
 
 define([
-    "../app", "routers/BaseRouter", "views/LoginView"
-], function(app, BaseRouter, LoginView )
+    "app", "routers/BaseRouter", "views/LoginView", "models/SessionModel"
+], function(app, BaseRouter, LoginView, SessionModel )
 {
     var AppRouter = BaseRouter.extend({
         initialize: function() {
@@ -25,16 +25,16 @@ define([
     });
 
   
-  app.router = new AppRouter();
+  //app.router = new AppRouter();
             //app.subrouter = new SubRouter();
 
             // Create a new session model and scope it to the app global
             // This will be a singleton, which other modules can access
-            app.session = new SessionModel({ });
+        //    app.session = new SessionModel({ });
 
-             Backbone.history.start();
-   // return AppRouter;
+        //     Backbone.history.start();
+    return AppRouter;
 
 });
     
-});
+// });

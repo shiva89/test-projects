@@ -1,1 +1,0 @@
-require(["app","routers/AppRouter","routers/SubRouter","models/SessionModel"],function(e,t,n,r){e.router=new WebRouter,e.subrouter=new n,e.session=new r({}),Backbone.history.start()});

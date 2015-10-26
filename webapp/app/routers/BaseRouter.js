@@ -1,10 +1,10 @@
 /**
  * @desc        backbone router for pushState page routing
  */
-require(["../config"], function(){
+// require(["config"], function(){
 
-require([
-    "../app", "views/HeaderView", "views/FooterView",
+define([
+    "app", "views/HeaderView", "views/FooterView",
 
 ], function( app, HeaderView, FooterView
         )
@@ -72,4 +72,4 @@ require([
 
 });
 
-});
+// });

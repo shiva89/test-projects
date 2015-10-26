@@ -1,5 +1,1 @@
-require(['build-dest/lib-loader'], function() {
-    // require(['routers/AppRouter']);
-    require(['build-dest/login-loader','build-dest/app-loader']);
-
-});
+require(["build-dest/lib-loader"],function(){require(["build-dest/login-loader","build-dest/app-loader"])}),define("loader",function(){});
