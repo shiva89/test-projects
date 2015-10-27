@@ -58,13 +58,10 @@ define([
                 cont_el.html(this.currentView.render().$el);
 //            }
             /********************** Render Footer ***********************/ 
-            if (this.footerView && this.footerView.empty_view) {
-                this.footerView.empty_view();
+            if (!this.footerView) {
+                this.footerView = new FooterView({});
+                this.footerView.setElement($(".footer-wrapper")).render();
             }
-            this.footerView = new FooterView({});
-            var footer_el = $('.footer-wrapper');
-            this.footerView.setElement(footer_el).render();
-
         },
         login: function() {
             this.show(new MainView({template : _.template( LoginTpl )}));
