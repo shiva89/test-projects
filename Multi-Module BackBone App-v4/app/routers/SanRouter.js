@@ -1,1 +1,33 @@
-define("text!templates/test.html",[],function(){return'<div id="middle">\r\n    <div class="wrapper">\r\n\r\n\r\n\r\n        <div id="middle_full">\r\n\r\nTest page\r\n\r\n\r\n        </div>\r\n\r\n\r\n    </div>\r\n</div>\r\n'}),define("views/TestView",["app","text!templates/test.html"],function(e,t){var n=Backbone.View.extend({template:_.template(t),initialize:function(){_.bindAll(this)},render:function(){return this.$el.html(this.template({})),this}});return n}),define("routers/SanRouter",["../app","routers/BaseRouter","views/TestView"],function(e,t,n){var r=t.extend({initialize:function(){_.bindAll(this)},routes:{test:"showTestView"},showTestView:function(){this.show(new n({}),{requiresAuth:!1})}});return r});
+/**
+ * @desc        backbone router for pushState page routing
+ */
+
+define([
+    "../app",
+    "routers/BaseRouter",
+    "views/TestView"
+
+], function(
+         app,
+         BaseRouter,
+         TestView
+        )
+{
+
+    var SanRouter = BaseRouter.extend({
+        initialize: function() {
+            _.bindAll(this);
+        },
+        routes: {
+            "test" : "showTestView"
+        },
+
+        showTestView: function() {
+            this.show(new TestView({}), {requiresAuth: false});
+        }
+
+    });
+
+    return SanRouter;
+
+});

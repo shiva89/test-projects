@@ -1,1 +1,76 @@
-define(["app","views/HeaderView","views/FooterView"],function(e,t,n){Backbone.View.prototype.close=function(){this.remove(),this.unbind(),this.onClose&&this.onClose()},Backbone.View.prototype.empty_view=function(){this.$el.empty(),this.unbind()};var r=Backbone.Router.extend({initialize:function(){_.bindAll(this);var e=this},back:function(){this.routesHit>1?window.history.back():this.navigate("",{trigger:!0,replace:!0})},routes:{},show:function(e,r){this.headerView||(this.headerView=new t({}),this.headerView.setElement($(".header-wrapper")).render()),console.log("in base router- headerview done"),this.currentView&&this.currentView.close&&this.currentView.close();var i;this.currentView=e,i=$(".content-wrapper"),i.html(this.currentView.render().$el),console.log("in base router- mainview done"),this.footerView&&this.footerView.empty_view&&this.footerView.empty_view(),this.footerView=new n({});var s=$(".footer-wrapper");this.footerView.setElement(s).render(),console.log("in base router- footerview done")}});return r});
+/**
+ * @desc        backbone router for pushState page routing
+ */
+// require(["config"], function(){
+
+define([
+    "app", "views/HeaderView", "views/FooterView",
+
+], function( app, HeaderView, FooterView
+        )
+{
+    Backbone.View.prototype.close = function() {
+        this.remove();
+        this.unbind();
+        if (this.onClose) {
+            this.onClose();
+        }
+    };
+    Backbone.View.prototype.empty_view = function() {
+        this.$el.empty();
+        this.unbind();
+    };
+    var BaseRouter = Backbone.Router.extend({
+        initialize: function() {
+            _.bindAll(this);
+            var self = this;
+        },
+        back: function() {
+            if (this.routesHit > 1) {
+                //more than one route hit -> user did not land to current page directly
+                window.history.back();
+            } else {
+                //otherwise go to the home page. Use replaceState if available so
+                //the navigation doesn't create an extra history entry
+                this.navigate('', {trigger: true, replace: true});
+            }
+        },
+        routes: {
+
+        },
+        show: function(view, options) {
+           /********************** Render Header **************************/ 
+            if (!this.headerView) {
+                this.headerView = new HeaderView({});
+                this.headerView.setElement($(".header-wrapper")).render();
+            }console.log('in base router- headerview done');
+         /********************** Render Page content***********************/ 
+            // Close and unbind any existing page view
+            if (this.currentView && this.currentView.close) {
+                this.currentView.close();
+            }
+            var cont_el;
+            // Establish the requested view into scope
+            this.currentView = view;
+            cont_el = $('.content-wrapper');
+                // Render inside the page wrapper
+                cont_el.html(this.currentView.render().$el);console.log('in base router- mainview done');
+                 // this.currentView.setElement(cont_el).render();
+//            }
+            /********************** Render Footer ***********************/ 
+            if (this.footerView && this.footerView.empty_view) {
+                this.footerView.empty_view();
+            }
+            this.footerView = new FooterView({});
+            var footer_el = $('.footer-wrapper');
+            this.footerView.setElement(footer_el).render();
+console.log('in base router- footerview done');
+        }
+
+    });
+
+    return BaseRouter;
+
+});
+
+// });

@@ -30,11 +30,10 @@
     },
     mainConfigFile:'loader.js',
     dir: '../appmin',
-    //name: "loader",
-   // removeCombined: true,
+    removeCombined: false,
     findNestedDependencies: true,
-    keepBuildDir: false,
-     //   out: "../assets/minified/loader-built.js",
+    keepBuildDir: true,
+    skipDirOptimize: true,
     modules: [
         //First set up the common build layer.
         {
