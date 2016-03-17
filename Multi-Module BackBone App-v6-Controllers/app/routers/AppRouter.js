@@ -22,8 +22,6 @@
                 },
 
                 login: function() {
-                    // app.appController = app.appController || new AppController();
-                    // app.appController.showLogin();  
                     AppController.showLogin();            
                 },
                 showTestView: function() {
@@ -35,7 +33,6 @@
                     require(["controllers/SubController"], function(SubController){
                          SubController.showPropDetail();      
                     });
-
                },
                showPropSearch: function() {
                     require(["controllers/SubController"], function(SubController){
