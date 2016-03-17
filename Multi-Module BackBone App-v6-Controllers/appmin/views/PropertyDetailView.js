@@ -17,9 +17,5 @@ define( [
             return this;
         }
     } );
-    
-    
-    
-
     return PropertyDetailView;
 } );

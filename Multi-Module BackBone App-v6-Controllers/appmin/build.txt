@@ -27,13 +27,13 @@ text!templates/login.html
 views/LoginView.js
 controllers/AppController.js
 
-controllers/SanController.js
+controllers/TestController.js
 ----------------
 text!templates/test.html
 views/TestView.js
-controllers/SanController.js
+controllers/TestController.js
 
-controllers/SubController.js
+controllers/PropertyController.js
 ----------------
 text!templates/prop-details.html
 views/PropertyDetailView.js
@@ -41,7 +41,7 @@ text!templates/prop-search.html
 views/PropertySearchView.js
 models/PropertyDetailModel.js
 models/PropertySearchModel.js
-controllers/SubController.js
+controllers/PropertyController.js
 
 loader.js
 ----------------

@@ -4,9 +4,7 @@
 
     define([
         "app", "controllers/AppController"
-        // "controllers/AppController", "controllers/SanController", "controllers/SubController"
         ], function(app , AppController
-            // , AppController, SanController, SubController 
             )
         {
             var AppRouter = Backbone.Router.extend({
@@ -22,24 +20,21 @@
                 },
 
                 login: function() {
-                    // app.appController = app.appController || new AppController();
-                    // app.appController.showLogin();  
                     AppController.showLogin();            
                 },
                 showTestView: function() {
-                    require(["controllers/SanController"], function(SanController){
-                         SanController.showTestView();         
+                    require(["controllers/TestController"], function(TestController){
+                         TestController.showTestView();         
                     });
                },
                showPropDetail: function() {
-                    require(["controllers/SubController"], function(SubController){
-                         SubController.showPropDetail();      
+                    require(["controllers/PropertyController"], function(PropertyController){
+                         PropertyController.showPropDetail();      
                     });
-
                },
                showPropSearch: function() {
-                    require(["controllers/SubController"], function(SubController){
-                         SubController.showPropSearch(); 
+                    require(["controllers/PropertyController"], function(PropertyController){
+                         PropertyController.showPropSearch(); 
                     });
                    
                }

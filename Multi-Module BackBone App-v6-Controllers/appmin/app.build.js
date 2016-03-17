@@ -42,20 +42,14 @@
             //List common dependencies here. Only need to list
             //top level dependencies, "include" will find
             //nested dependencies.
-/*            include: ['jquery',               
-                      'underscore',
-                      'backbone',
-                      'bootstrap.min',
-                      'async',
-                      'text', 'app', 'views/HeaderView', 'views/FooterView', 'routers/BaseRouter'
-            ],*/
+
             include:['controllers/BaseController']
            
         },
         {
             name: 'build-dest/login-loader',
              //include:['routers/AppRouter'],
-            exclude: ["controllers/AppController", "controllers/SanController", "controllers/SubController"]
+            exclude: ["controllers/AppController", "controllers/TestController", "controllers/PropertyController"]
         },
         {
             // name: 'build-dest/app-loader',
@@ -65,19 +59,19 @@
         },
         {
 
-            name: "controllers/SanController",
+            name: "controllers/TestController",
             // include:['routers/SubRouter'],
             exclude: ['build-dest/lib-loader', 'build-dest/login-loader']
         },
         {
 
-            name: "controllers/SubController",
+            name: "controllers/PropertyController",
             // include:['routers/SubRouter'],
             exclude: ['build-dest/lib-loader', 'build-dest/login-loader']
         },
         {
             name : 'loader',
-            exclude: ['build-dest/login-loader','build-dest/lib-loader', "controllers/AppController", "controllers/SanController", "controllers/SubController"]
+            exclude: ['build-dest/login-loader','build-dest/lib-loader', "controllers/AppController", "controllers/TestController", "controllers/PropertyController"]
         }
         ]
 

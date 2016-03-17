@@ -6,7 +6,7 @@ define( [
         initialize : function () {
             _.bindAll( this );         
         }
-
+     //common view methods here
     
     });
     return BaseView;

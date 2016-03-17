@@ -18,7 +18,7 @@ define( [
               return this;
           },
           ShowPropDetailsView :function (){
-            app.router.navigate('propDetail/10', true);
+            app.router.navigate('propDetail', true);
     }
 } );
 

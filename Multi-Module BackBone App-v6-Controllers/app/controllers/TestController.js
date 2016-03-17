@@ -4,22 +4,19 @@
 
 define([
     "../app",
-    "routers/BaseRouter",
+    "controllers/BaseController",
     "views/TestView"
 
 ], function(
          app,
-         BaseRouter,
+         BaseController,
          TestView
         )
 {
 
-    var SanRouter = BaseRouter.extend({
+    var TestController = _.extend( BaseController, {
         initialize: function() {
             _.bindAll(this);
-        },
-        routes: {
-            "test" : "showTestView"
         },
 
         showTestView: function() {
@@ -28,6 +25,6 @@ define([
 
     });
 
-    return SanRouter;
+    return TestController;
 
 });

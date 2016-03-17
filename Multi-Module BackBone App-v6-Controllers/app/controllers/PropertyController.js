@@ -20,26 +20,22 @@ define([
         )
 {
 
-    var SubController = _.extend( BaseController, {
+    var PropertyController = _.extend( BaseController, {
         initialize: function() {
             _.bindAll(this);
         },
 
-        showPropDetail: function(property_id) {
-            if(!app.PropertyDetailModel){
-                app.PropertyDetailModel = new PropertyDetailModel();
-            }
+        showPropDetail: function() {
+            app.propertyDetailModel = app.propertyDetailModel || new PropertyDetailModel();
             this.show(new PropertyDetailView({}), {requiresAuth: false});
         },
-        showPropSearch: function() {console.log('in sub router- showPropSearch');
-           if(!app.PropertySearchModel){
-                app.PropertySearchModel = new PropertySearchModel();
-            }console.log('no error in model init');
+        showPropSearch: function() {
+            app.propertySearchModel = app.propertySearchModel || new PropertySearchModel();
             this.show(new PropertySearchView({}), {requiresAuth: false});
         }
 
     });
 
-    return SubController;
+    return PropertyController;
 
 });

@@ -22,17 +22,7 @@ define( [
              return this;
          },
          ShowPropSearchView :function (){
-            // app.navigater('propSearch');
            app.router.navigate('test', true);
-            // if(app.subrouter){
-            //     app.subrouter.navigate('propSearch', true);
-            // }else{
-            // require(['routers/SubRouter'], function(SubRouter){
-            //     app.subrouter = new SubRouter();
-            //     app.subrouter.navigate('propSearch', true);
-            // });
-            // }
-
         }
     });
         return LoginView;
