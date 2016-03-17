@@ -1,1 +1,0 @@
-define(["app"],function(e){var t=Backbone.Model.extend({initialize:function(){_.bindAll(this)},defaults:{authenticated:!1,session_id:null,user_id:"",user_type:"",username:"",user_email:"",first_name:"",last_name:"",phone:"",profile_score:"",investment_amount:"",default_page:"plan",reset_pwd:!1},url:function(){return e.API+"/user"}});return t});

@@ -1,1 +1,0 @@
-define(["app","text!templates/prop-details.html"],function(e,t){var n=Backbone.View.extend({template:_.template(t),initialize:function(){_.bindAll(this)},render:function(){var t=e.session.get("logged_in");return this.$el.html(this.template({logged_in:t})),this}});return n});

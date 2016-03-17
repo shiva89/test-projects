@@ -1,1 +1,0 @@
-define(["underscore","backbone"],function(e,t){var n={root:"./index.html",URL:"./index.html",API:"./index.php",JAVA_API:""};return $.ajaxSetup({cache:!1}),n.eventAggregator=e.extend({},t.Events),n});

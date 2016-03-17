@@ -1,1 +1,0 @@
-define(["app"],function(e){var t=Backbone.Model.extend({initialize:function(){_.bindAll(this)},defaults:{}});return t});

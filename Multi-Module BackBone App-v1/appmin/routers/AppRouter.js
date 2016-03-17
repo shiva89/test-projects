@@ -1,1 +1,0 @@
-define(["app","routers/BaseRouter","views/LoginView","models/SessionModel"],function(e,t,n,r){var i=t.extend({routes:{"":"login",login:"login"},login:function(){this.show(new n({}),{requiresAuth:!1})}});return i});

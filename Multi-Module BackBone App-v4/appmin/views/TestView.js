@@ -1,1 +1,0 @@
-define(["app","text!templates/test.html"],function(e,t){var n=Backbone.View.extend({template:_.template(t),initialize:function(){_.bindAll(this)},render:function(){return this.$el.html(this.template({})),this}});return n});

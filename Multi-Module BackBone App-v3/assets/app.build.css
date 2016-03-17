@@ -1,6 +1,0 @@
-/*
- * This file includes the urls of all the CSS files that should be included in the build of the minified css
- */
-
-@import url( "css/neighborhood.css" );
-@import url( "vendor/fa/css/font-awesome.min.css" );

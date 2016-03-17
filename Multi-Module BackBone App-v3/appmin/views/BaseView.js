@@ -1,1 +1,0 @@
-define(["app"],function(e){var t=Backbone.View.extend({initialize:function(){_.bindAll(this)}});return t});
