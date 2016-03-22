@@ -44,29 +44,23 @@
             //nested dependencies.
 
             include:['controllers/BaseController']
-           
         },
         {
             name: 'build-dest/login-loader',
-             //include:['routers/AppRouter'],
             exclude: ["controllers/AppController", "controllers/TestController", "controllers/PropertyController"]
         },
         {
-            // name: 'build-dest/app-loader',
             name: "controllers/AppController",
-            //include:['routers/SubRouter'],
             exclude: ['build-dest/lib-loader', 'build-dest/login-loader']
         },
         {
 
             name: "controllers/TestController",
-            // include:['routers/SubRouter'],
             exclude: ['build-dest/lib-loader', 'build-dest/login-loader']
         },
         {
 
             name: "controllers/PropertyController",
-            // include:['routers/SubRouter'],
             exclude: ['build-dest/lib-loader', 'build-dest/login-loader']
         },
         {

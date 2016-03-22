@@ -2,11 +2,13 @@
  * @desc        app globals
  */
 define([
-     "jquery",
+/*     "jquery",
     "underscore",
-    "backbone"
+    "backbone"*/
 ],
-function($, _, Backbone) {
+function(
+ /*   $, _, Backbone*/
+    ) {
     
     var app = {
         root : "./index.html",                     // The root path to run the application through.

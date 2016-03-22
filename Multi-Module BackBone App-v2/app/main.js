@@ -40,11 +40,17 @@ requirejs.onError = function (err) {
 
 
 require([
+    'jquery',
+    'underscore',
+    'backbone',
     'app',
     'routers/AppRouter', 
-    'models/SessionModel'
+    'models/SessionModel',
+    'bootstrap.min',
+    'async',
+    'text',
     ], 
-    function(
+    function($, _, Backbone,
         app, AppRouter, SessionModel){
 
            //initialize application

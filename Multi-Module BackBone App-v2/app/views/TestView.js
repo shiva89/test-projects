@@ -1,10 +1,11 @@
 define( [
     "app",
-    "text!templates/test.html"
+    "text!templates/test.html",
+    "views/BaseView"
 
-    ], function ( app, TestTpl ) {
+    ], function ( app, TestTpl, BaseView ) {
 
-        var TestView = Backbone.View.extend( {
+        var TestView = BaseView.extend( {
 
             template : _.template( TestTpl ),
             initialize : function () {
@@ -13,6 +14,10 @@ define( [
 
             render : function () {
              this.$el.html( this.template({}));
+/*             this.loadGoogleLibraries("visualization",
+                function(){
+                    console.log('visualization loaded');
+                });*/
              return this;
          }
     });

@@ -42,31 +42,28 @@
             //List common dependencies here. Only need to list
             //top level dependencies, "include" will find
             //nested dependencies.
-            include:['app', 'controllers/BaseController'],
-            exclude: ["controllers/AppController","controllers/TestController", "controllers/PropertyController"]
+            include:['controllers/BaseController', 'controllers/AppController'],
+            exclude: ["controllers/TestController", "controllers/PropertyController"]
         },
 /*        {
             name: 'build-dest/login-loader',
              //include:['routers/AppRouter'],
             exclude: ["controllers/AppController", "controllers/TestController", "controllers/PropertyController"]
         },*/
-        {
-            // name: 'build-dest/app-loader',
+/*        {
+            
             name: "controllers/AppController",
-            //include:['routers/SubRouter'],
-            exclude: ['main', 'app' ]
-        },
+            exclude: ['main', 'app', 'controllers/BaseController' ]
+        },*/
         {
 
             name: "controllers/TestController",
-            // include:['routers/SubRouter'],
-            exclude: ['main', 'app' ]
+            exclude: ['main', 'app','controllers/BaseController' ]
         },
         {
 
             name: "controllers/PropertyController",
-            // include:['routers/SubRouter'],
-            exclude: ['main', 'app' ]
+            exclude: ['main', 'app','controllers/BaseController' ]
         }
         ]
 

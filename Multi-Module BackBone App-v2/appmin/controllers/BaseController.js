@@ -31,7 +31,7 @@ define([
             if (!this.headerView) {
                 this.headerView = new HeaderView({});
                 this.headerView.setElement($(".header-wrapper")).render();
-            }console.log('in base router- headerview done');
+            }
          /********************** Render Page content***********************/ 
             // Close and unbind any existing page view
             if (this.currentView && this.currentView.close) {
@@ -42,7 +42,7 @@ define([
             this.currentView = view;
             cont_el = $('.content-wrapper');
                 // Render inside the page wrapper
-                cont_el.html(this.currentView.render().$el);console.log('in base router- mainview done');
+                cont_el.html(this.currentView.render().$el);
                  // this.currentView.setElement(cont_el).render();
 //            }
             /********************** Render Footer ***********************/ 
@@ -52,7 +52,7 @@ define([
             this.footerView = new FooterView({});
             var footer_el = $('.footer-wrapper');
             this.footerView.setElement(footer_el).render();
-          console.log('in base router- footerview done');
+          
         }
 
     };
