@@ -34,7 +34,7 @@ requirejs.onError = function (err) {
     }
     throw err;
 };
-
+//define modules
 define(["jquery"], function($) {
 
 });
